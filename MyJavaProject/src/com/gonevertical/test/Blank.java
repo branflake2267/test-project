@@ -1,7 +1,11 @@
 package com.gonevertical.test;
 
 public class Blank {
-
+ 
+    private void run() {
+        System.out.println("fast");
+    }
+    
 	public void newMethodOne() {
 		System.out.println("Hi");
 	}
