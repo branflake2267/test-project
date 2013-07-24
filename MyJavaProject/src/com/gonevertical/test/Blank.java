@@ -10,4 +10,12 @@ public class Blank {
 		System.out.println("there");
 	}
 	
+	public void newMethodThree() {
+		System.out.println("Do I conflict?");
+		
+		if (true) {
+			System.out.print("Maybe...");
+		}
+	}
+	
 }
