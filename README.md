@@ -8,6 +8,11 @@ nor is it a best practice of integration tests in general.
 Instead, it is *only* a demonstration of how to use GWT-Driver, 
 plus a relatively straightforward way of building Maven out to run these tests.
 
+##Reference
+* <a href="https://github.com/niloc132/gwt-driver/wiki">Documentation</a>
+* <a href="https://github.com/niloc132/gwt-driver">GWT Driver</a>
+* <a href="https://github.com/niloc132/gxt-driver">GXT Driver</a>
+
 ##Features
 
 ###Things this does:
