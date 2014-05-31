@@ -82,9 +82,7 @@ Only required for Eclipse 3.7
 ##Project Preferences
 
 ###Classpath Variables
-
-####GPE 2.3 and earlier
-1. For GPE 2.3 and after, this step is no longer necessary. See CL/20212038
+1. For **GPE 2.3 and after, this step is no longer necessary**. See CL/20212038
 2. Window->Preferences->Java->Build Path->Classpath Variables
 3. Define the classpath variable "GAE_TOOLS_JAR" which points to the appengine-api-tools.jar file that is part of an App Engine SDK.
 
