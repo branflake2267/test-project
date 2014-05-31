@@ -26,19 +26,24 @@ is under the "Eclipse" menu, not under "Window".
 
 ###Eclipse 3.3, 3.4:
 
-* Copy the plugin JARs from `tools/swtbot/3.3` into your Eclipse's `/dropins` directory (on 3.4)
-or `/plugins` directory (on 3.3).  
+* Copy the plugin JARs from `tools/swtbot/3.3` into your Eclipse's `/dropins` 
+directory (on 3.4) or `/plugins` directory (on 3.3).  
 
 ###Eclipse 3.5+:
 
-* Copy the plugin JARs from `tools/swtbot/3.5` into your Eclipse's `/dropins` directory.
-* The `com.google.gdt.eclipse.maven` plugin requires M2Eclipse (Maven support) to be installed.
-* The `com.google.gdt.eclipse.gph.hge` project requires MercurialEclipse to be installed. You can either
+* Copy the plugin JARs from `tools/swtbot/3.5` into your Eclipse's `/dropins` 
+directory.
+* The `com.google.gdt.eclipse.maven` plugin requires M2Eclipse (Maven support) 
+to be installed.
+* The `com.google.gdt.eclipse.gph.hge` project requires MercurialEclipse to be 
+installed. You can either
 close the project, or install MercurialEclipse: http://cbes.javaforge.com/update.
-* The `com.google.gdt.eclipse.gph.subclipse` project requires Subclipse to be installed. You can either
-close the project, or install Subclipse: http://subclipse.tigris.org/update_1.6.x.
-* The `com.google.gdt.eclipse.gph.subversive` project requires Subversive to be installed. You can either
-close the project, or install Subversive: http://download.eclipse.org/releases/helios (under Collaboration).
+* The `com.google.gdt.eclipse.gph.subclipse` project requires Subclipse to be 
+installed. You can either close the project, or install Subclipse: 
+http://subclipse.tigris.org/update_1.6.x.
+* The `com.google.gdt.eclipse.gph.subversive` project requires Subversive to 
+be installed. You can either close the project, or install Subversive: 
+http://download.eclipse.org/releases/helios (under Collaboration).
 
 ###Eclipse 3.7 (only):
 
@@ -49,7 +54,8 @@ Only required for Eclipse 3.7
 2. From the drop down list, select Google Internal for Eclipe 3.7
 3. Uncheck Group Items by Category
 4. Install Mylyn Commons
-5. If you are not using the internal version of Eclipse, please install Mylyn Commons from the Indigo Update site.
+5. If you are not using the internal version of Eclipse, please install 
+Mylyn Commons from the Indigo Update site.
 
 
 ##Formatting Preferences
@@ -61,7 +67,8 @@ Only required for Eclipse 3.7
 4. Enable "Show Print Margin" and set "Print Margin Column" to 80
 
 ###XML Files
-1. Window->Preferences->Web and XML->XML Files->Source, (or Window->Preferences->XML->XML Files->Editor, if you can't find it there)
+1. Window->Preferences->Web and XML->XML Files->Source, 
+(or Window->Preferences->XML->XML Files->Editor, if you can't find it there)
 2. Set "Line Width" 80
 3. Enable "Split Multiple Attributes Each of a New Line"
 4. Enable "Indent Using Spaces" with an Indentation Size of 4
@@ -84,7 +91,8 @@ Only required for Eclipse 3.7
 ###Classpath Variables
 1. For **GPE 2.3 and after, this step is no longer necessary**. See CL/20212038
 2. Window->Preferences->Java->Build Path->Classpath Variables
-3. Define the classpath variable "GAE_TOOLS_JAR" which points to the appengine-api-tools.jar file that is part of an App Engine SDK.
+3. Define the classpath variable "GAE_TOOLS_JAR" which points to the 
+appengine-api-tools.jar file that is part of an App Engine SDK.
 
 ###Output Filtering
 1. Window->Preferences->Java->Compiler->Building
@@ -127,7 +135,8 @@ Only required for Eclipse 3.7
 3. Enable "Format Source Code"
 4. Enable "Organize Imports"
 5. Enable "Additional Actions"
-6. Click "Configure", and make sure that all actions are disabled except "Sort Members Excluding fields, enum constants, and initializers"
+6. Click "Configure", and make sure that all actions are disabled except "Sort 
+Members Excluding fields, enum constants, and initializers"
 
 ##Code style/formatting
 1. Window->Preferences->Java->Code Style->Formatter->Import...
@@ -173,12 +182,15 @@ Checkstyle is used to enforce good programming style.
 Install Checkstyle plugin v4.x.
 
 1. Download this from http://sourceforge.net/projects/eclipse-cs/files/Eclipse%20Checkstyle%20Plug-in/v4.4.2/com.atlassw.tools.eclipse.checkstyle_4.4.2-bin.zip/download  
-2. Copy `plugins/com.atlassw.tools.eclipse.checkstyle_4.4.2` from the extraction of the above downloaded zip file into the dropins directory of your eclipse installation.
+2. Copy `plugins/com.atlassw.tools.eclipse.checkstyle_4.4.2` from the 
+extraction of the above downloaded zip file into the dropins directory of 
+your eclipse installation.
 
 ###Enable
 Enable Custom GWT Checkstyle checks.
 
-* Copy "settings/code-style/gwt-customchecks.jar" into: `<eclipse>/plugins/com.atlassw.tools.eclipse.checkstyle_x.x.x/extension-libraries`
+* Copy "settings/code-style/gwt-customchecks.jar" into: 
+`<eclipse>/plugins/com.atlassw.tools.eclipse.checkstyle_x.x.x/extension-libraries`
 
 ###Import styles
 Import GWT Checks.
@@ -226,4 +238,5 @@ only happens when the workbench metadata is first created. To have the workbench
 pick up changes to these variables,  go to the Main tab in your launch
 configuration, and check 'Clear' under Workspace Data. Note that this will also
 remove any projects that you created in the runtime workbench.
+
 
