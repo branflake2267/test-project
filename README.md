@@ -169,29 +169,34 @@ alphabetically.
 ##Checkstyle
 Checkstyle is used to enforce good programming style.
 
-1. Install Checkstyle plugin v4.x:
+###Download
+Install Checkstyle plugin v4.x.
 
- * Download this from http://sourceforge.net/projects/eclipse-cs/files/Eclipse%20Checkstyle%20Plug-in/v4.4.2/com.atlassw.tools.eclipse.checkstyle_4.4.2-bin.zip/download  
- * Copy `plugins/com.atlassw.tools.eclipse.checkstyle_4.4.2` from the extraction of the above downloaded zip file into the dropins directory of your eclipse installation.
+1. Download this from http://sourceforge.net/projects/eclipse-cs/files/Eclipse%20Checkstyle%20Plug-in/v4.4.2/com.atlassw.tools.eclipse.checkstyle_4.4.2-bin.zip/download  
+2. Copy `plugins/com.atlassw.tools.eclipse.checkstyle_4.4.2` from the extraction of the above downloaded zip file into the dropins directory of your eclipse installation.
 
-2. Enable Custom GWT Checkstyle checks:
+###Enable
+Enable Custom GWT Checkstyle checks.
 
- * Copy "settings/code-style/gwt-customchecks.jar" into: `<eclipse>/plugins/com.atlassw.tools.eclipse.checkstyle_x.x.x/extension-libraries`
+* Copy "settings/code-style/gwt-customchecks.jar" into: `<eclipse>/plugins/com.atlassw.tools.eclipse.checkstyle_x.x.x/extension-libraries`
 
-3. Import GWT Checks:
+###Import styles
+Import GWT Checks.
 
- * Window->Preferences->Checkstyle->New...
- * Set the Type to "External Configuration File"
- * Set the Name to "GWT Checks" (important)
- * Set the location to "settings/code-style/gwt-checkstyle.xml".
- * Suggested: Check "Protect Checkstyle configuration file".
- * Click "Ok".
+1. Window->Preferences->Checkstyle->New...
+2. Set the Type to "External Configuration File"
+3. Set the Name to "GWT Checks" (important)
+4. Set the location to "settings/code-style/gwt-checkstyle.xml".
+5. Suggested: Check "Protect Checkstyle configuration file".
+6. Click "Ok".
 
-4. Import GWT Checks for Tests
+###Import test styles
+Import GWT Checks for Tests
 
  * Repeat step 3, except:
  * Set the Name to "GWT Checks for Tests" (important)
  * Set the location to "settings/code-style/gwt-checkstyle-tests.xml".
+
 
 ##Importing the Google Plugin projects
 
