@@ -95,7 +95,7 @@ close the project, or install Subversive: http://download.eclipse.org/releases/h
 
 3. Comments->Types template should look like this:
 
-```
+   ```
    /**
     *
     * ${tags}
