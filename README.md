@@ -40,6 +40,17 @@ close the project, or install Subclipse: http://subclipse.tigris.org/update_1.6.
 * The `com.google.gdt.eclipse.gph.subversive` project requires Subversive to be installed. You can either
 close the project, or install Subversive: http://download.eclipse.org/releases/helios (under Collaboration).
 
+###Eclipse 3.7 (only):
+
+####Mylyn
+Only required for Eclipse 3.7
+
+1. Go to Help->Install New Software
+2. From the drop down list, select Google Internal for Eclipe 3.7
+3. Uncheck Group Items by Category
+4. Install Mylyn Commons
+5. If you are not using the internal version of Eclipse, please install Mylyn Commons from the Indigo Update site.
+
 
 ##Formatting Preferences
 
@@ -154,14 +165,6 @@ Second, members in the same category should be sorted by visibility.
 * Third, within a category/visibility combination, members should be sorted
 alphabetically.
 
-
-##Mylyn
-1. Only required for Eclipse 3.7
-2. Go to Help->Install New Software
-3. From the drop down list, select Google Internal for Eclipe 3.7
-4. Uncheck Group Items by Category
-5. Install Mylyn Commons
-6. If you are not using the internal version of Eclipse, please install Mylyn Commons from the Indigo Update site.
 
 ##Checkstyle
 Checkstyle is used to enforce good programming style.
