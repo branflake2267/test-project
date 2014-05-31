@@ -9,20 +9,20 @@ The Google Plugin for Eclipse repository.
 
 
 ##Configuring the Eclipse Workspace
-This file contains instructions on how to set up your Eclipse environment to
-work with the source code for the Google Plugin for Eclipse:
+This file contains instructions on how to setup the Eclipse environment to
+work with the source code for the Google Plugin for Eclipse.
 
-Configuring your Eclipse workspace to develop on the Google Eclipse plugin is very
+Configuring the Eclipse workspace to develop on the Google Eclipse plugin is very
 much like getting set up to develop for GWT. The same style rules apply, and
-Eclipse projects are provided for you to import. The "settings" directory
+Eclipse projects are provided for import. The "settings" directory
 mentioned below is under "eclipse", in your checkout of plugin.
 
-Macintosh users: Note that on the Macintosh version of Eclipse, "Preferences"
+* *Macintosh users*: Note that on the Macintosh version of Eclipse, "Preferences"
 is under the "Eclipse" menu, not under "Window".
 
 ##Dependent Plugins
 
-* You'll need to restart Eclipse to detect the new plugins.
+* Restart Eclipse to detect the new plugins.
 
 ###Eclipse 3.3, 3.4:
 
