@@ -1,4 +1,12 @@
 #Google Eclipse Plugin (GPE)
+The Google Plugin for Eclipse repository. 
+
+##Repository manifest 
+* [common/](common/) - `com.google.gdt.googleapi.core` common library.
+* [eclipse/](eclipse/) - Eclipse settings resources such as code style imports.
+* [features/](features/) - Eclipse features for plugin by Eclipse platform version.
+* [tools/](tools/) - Third party tools to for working on this project.
+
 
 ##Configuring the Eclipse Workspace
 This file contains instructions on how to set up your Eclipse environment to
