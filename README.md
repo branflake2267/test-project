@@ -216,7 +216,7 @@ in their name.
 ##Launching the Plugin
 
 Once your projects have been imported, go to the Package Explorer and
-right-click on the "com.google.gdt.eclipse.suite" project. Go to 
+right-click on the "`com.google.gdt.eclipse.suite`" project. Go to 
 "Run As" > "Eclipse Application".  Another instance of Eclipse should launch,
 running GPE!
 
