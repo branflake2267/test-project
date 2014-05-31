@@ -1,4 +1,6 @@
-#Configuring the Eclipse Workspace
+#Google Eclipse Plugin (GPE)
+
+##Configuring the Eclipse Workspace
 This file contains instructions on how to set up your Eclipse environment to
 work with the source code for the Google Plugin for Eclipse:
 
@@ -12,56 +14,49 @@ is under the "Eclipse" menu, not under "Window".
 
 ##Dependent Plugins
 
-In Eclipse 3.3/3.4:
+* You'll need to restart Eclipse to detect the new plugins.
 
-Copy the plugin JARs from tools/swtbot/3.3 into your Eclipse's /dropins directory (on 3.4)
-or /plugins directory (on 3.3).  You'll need to restart Eclipse to detect the new plugins.
+###Eclipse 3.3,3.4:
 
-In Eclipse 3.5/3.6/3.7:
+* Copy the plugin JARs from `tools/swtbot/3.3` into your Eclipse's `/dropins` directory (on 3.4)
+or `/plugins` directory (on 3.3).  
 
-Copy the plugin JARs from tools/swtbot/3.5 into your Eclipse's /dropins directory.
+###Eclipse 3.5,3.6,3.7:
 
-You'll need to restart Eclipse to detect the new plugins.
-
-The com.google.gdt.eclipse.maven plugin requires M2Eclipse (Maven support) to be installed.
-
-The com.google.gdt.eclipse.gph.hge project requires MercurialEclipse to be installed. You can either
+* Copy the plugin JARs from `tools/swtbot/3.5` into your Eclipse's `/dropins` directory.
+* The `com.google.gdt.eclipse.maven` plugin requires M2Eclipse (Maven support) to be installed.
+* The `com.google.gdt.eclipse.gph.hge` project requires MercurialEclipse to be installed. You can either
 close the project, or install MercurialEclipse: http://cbes.javaforge.com/update.
-
-The com.google.gdt.eclipse.gph.subclipse project requires Subclipse to be installed. You can either
+* The `com.google.gdt.eclipse.gph.subclipse` project requires Subclipse to be installed. You can either
 close the project, or install Subclipse: http://subclipse.tigris.org/update_1.6.x.
-
-The com.google.gdt.eclipse.gph.subversive project requires Subversive to be installed. You can either
+* The `com.google.gdt.eclipse.gph.subversive` project requires Subversive to be installed. You can either
 close the project, or install Subversive: http://download.eclipse.org/releases/helios (under Collaboration).
 
-##Text Editors
+##Formatting
 
-Window->Preferences->General->Editors->Text Editors
-Make sure that "Displayed Tab Width" is set to 2
-Enable "Insert Spaces for Tabs"
-Enable "Show Print Margin" and set "Print Margin Column" to 80
+###Text Editors
+1. Window->Preferences->General->Editors->Text Editors
+2. Make sure that "Displayed Tab Width" is set to 2
+3. Enable "Insert Spaces for Tabs"
+4. Enable "Show Print Margin" and set "Print Margin Column" to 80
 
-##XML Files
+###XML Files
+1. Window->Preferences->Web and XML->XML Files->Source, (or Window->Preferences->XML->XML Files->Editor, if you can't find it there)
+2. Set "Line Width" 80
+3. Enable "Split Multiple Attributes Each of a New Line"
+4. Enable "Indent Using Spaces" with an Indentation Size of 4
 
-Window->Preferences->Web and XML->XML Files->Source
-(or Window->Preferences->XML->XML Files->Editor, if you can't find it there)
-Set "Line Width" 80
-Enable "Split Multiple Attributes Each of a New Line"
-Enable "Indent Using Spaces" with an Indentation Size of 4
+###Ant Build Files
+1. Window->Preferences->Ant->Editor->Formatter
+2. Set "Tab Size" to 4
+3. Disable "Use Tabs Instead of Spaces"
+4. Set "Maximum Line Width" to 80
+5. Enable "Wrap Long Element Tags"
 
-##Ant Build Files
-
-Window->Preferences->Ant->Editor->Formatter
-Set "Tab Size" to 4
-Disable "Use Tabs Instead of Spaces"
-Set "Maximum Line Width" to 80
-Enable "Wrap Long Element Tags"
-
-##Spelling
-
-Window->Preferences->General->Editors->Text Editors->Spelling
-Enable spell checking
-Use "settings/english.dictionary".
+###Spelling
+1. Window->Preferences->General->Editors->Text Editors->Spelling
+2. Enable spell checking
+3. Use "settings/english.dictionary".
 
 ##Classpath Variables
 
