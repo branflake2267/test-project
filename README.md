@@ -16,12 +16,12 @@ is under the "Eclipse" menu, not under "Window".
 
 * You'll need to restart Eclipse to detect the new plugins.
 
-###Eclipse 3.3,3.4:
+###Eclipse 3.3, 3.4:
 
 * Copy the plugin JARs from `tools/swtbot/3.3` into your Eclipse's `/dropins` directory (on 3.4)
 or `/plugins` directory (on 3.3).  
 
-###Eclipse 3.5,3.6,3.7:
+###Eclipse 3.5+:
 
 * Copy the plugin JARs from `tools/swtbot/3.5` into your Eclipse's `/dropins` directory.
 * The `com.google.gdt.eclipse.maven` plugin requires M2Eclipse (Maven support) to be installed.
@@ -32,7 +32,8 @@ close the project, or install Subclipse: http://subclipse.tigris.org/update_1.6.
 * The `com.google.gdt.eclipse.gph.subversive` project requires Subversive to be installed. You can either
 close the project, or install Subversive: http://download.eclipse.org/releases/helios (under Collaboration).
 
-##Formatting
+
+##Formatting Preferences
 
 ###Text Editors
 1. Window->Preferences->General->Editors->Text Editors
@@ -58,101 +59,93 @@ close the project, or install Subversive: http://download.eclipse.org/releases/h
 2. Enable spell checking
 3. Use "settings/english.dictionary".
 
-##Classpath Variables
 
-For GPE 2.3 and after, this step is no longer necessary. See CL/20212038
+##Project Preferences
 
-Window->Preferences->Java->Build Path->Classpath Variables
+###Classpath Variables
+1. For GPE 2.3 and after, this step is no longer necessary. See CL/20212038
+2. Window->Preferences->Java->Build Path->Classpath Variables
+3. Define the classpath variable "GAE_TOOLS_JAR" which points to the appengine-api-tools.jar file that is part of an App Engine SDK.
 
-Define the classpath variable "GAE_TOOLS_JAR" which points to the appengine-api-tools.jar file that is part of an App Engine SDK.
+###Output Filtering
+1. Window->Preferences->Java->Compiler->Building
+2. Make sure "Filtered Resources" includes ".svn/"
 
-##Output Filtering
+###Code Templates
+1. Window->Preferences->Java->Code Style->Code Templates
+2. Comments->Files template should look like this:
 
-Window->Preferences->Java->Compiler->Building
-Make sure "Filtered Resources" includes ".svn/"
+    /*
+     * Copyright ${year} Google Inc.
+     * 
+     * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+     * use this file except in compliance with the License. You may obtain a copy of
+     * the License at
+     * 
+     * http://www.apache.org/licenses/LICENSE-2.0
+     * 
+     * Unless required by applicable law or agreed to in writing, software
+     * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+     * License for the specific language governing permissions and limitations under
+     * the License.
+     */
 
-##Code Templates
+3. Comments->Types template should look like this:
 
-Window->Preferences->Java->Code Style->Code Templates
+    /**
+     *
+     * ${tags}
+     */
 
-Comments->Files template should look like this:
-
-  /*
-   * Copyright ${year} Google Inc.
-   * 
-   * Licensed under the Apache License, Version 2.0 (the "License"); you may not
-   * use this file except in compliance with the License. You may obtain a copy of
-   * the License at
-   * 
-   * http://www.apache.org/licenses/LICENSE-2.0
-   * 
-   * Unless required by applicable law or agreed to in writing, software
-   * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-   * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
-   * License for the specific language governing permissions and limitations under
-   * the License.
-   */
-
-Comments->Types template should look like this:
-
-  /**
-   *
-   * ${tags}
-   */
-
-##Save Actions
-
-Window->Preferences->Java->Editor->Save Actions
-
-Enable "Perform the Selected Actions on Save"
-Enable "Format Source Code"
-Enable "Organize Imports"
-Enable "Additional Actions"
-Click "Configure", and make sure that all actions are disabled except "Sort Members Excluding fields, enum constants, and initializers"
+###Save Actions
+1. Window->Preferences->Java->Editor->Save Actions
+2. Enable "Perform the Selected Actions on Save"
+3. Enable "Format Source Code"
+4. Enable "Organize Imports"
+5. Enable "Additional Actions"
+6. Click "Configure", and make sure that all actions are disabled except "Sort Members Excluding fields, enum constants, and initializers"
 
 ##Code style/formatting
-
-Window->Preferences->Java->Code Style->Formatter->Import...
-  settings/code-style/gwt-format.xml
+1. Window->Preferences->Java->Code Style->Formatter->Import...
+2. Import `settings/code-style/gwt-format.xml`
 
 ##Import organization
-
-Window->Preferences->Java->Code Style->Organize Imports->Import...
-  settings/code-style/gwt.importorder
+1. Window->Preferences->Java->Code Style->Organize Imports->Import...
+2. Import `settings/code-style/gwt.importorder`
 
 ##Member sort order
+1. Window->Preferences->Java->Appearance->Members Sort Order
+2. There is no import here, so make your settings match:
+<img src="eclipse/settings/code-style/gwt-sort-order.png" />
 
-Window->Preferences->Java->Appearance->Members Sort Order
-There is no import here, so make your settings match:
-  settings/code-style/gwt-sort-order.png
+* First, members should be sorted by category.
+1. `Types`
+2. `Static Fields`
+3. `Static Initializers`
+4. `Static Methods`
+5. `Fields`
+6. `Initializers`
+7. `Constructors`
+8. `Methods`
 
-First, members should be sorted by category.
-1) Types
-2) Static Fields
-3) Static Initializers
-4) Static Methods
-5) Fields
-6) Initializers
-7) Constructors
-8) Methods
+* Second, members in the same category should be sorted by visibility.
+1. `Public`
+2. `Protected`
+3. `Default`
+4. `Private`
 
-Second, members in the same category should be sorted by visibility.
-1) Public
-2) Protected
-3) Default
-4) Private
-
-Third, within a category/visibility combination, members should be sorted
+* Third, within a category/visibility combination, members should be sorted
 alphabetically.
 
-##Mylyn
 
-Only required for Eclipse 3.7
-Go to Help->Install New Software
-From the drop down list, select Google Internal for Eclipe 3.7
-Uncheck Group Items by Category
-Install Mylyn Commons
-If you are not using the internal version of Eclipse, please install Mylyn Commons from the Indigo Update site.
+##Mylyn
+1. Only required for Eclipse 3.7
+2. Go to Help->Install New Software
+3. From the drop down list, select Google Internal for Eclipe 3.7
+4. Uncheck Group Items by Category
+5. Install Mylyn Commons
+6. If you are not using the internal version of Eclipse, please install Mylyn Commons from the Indigo Update site.
 
 ##Checkstyle
 Checkstyle is used to enforce good programming style.
