@@ -170,30 +170,28 @@ alphabetically.
 Checkstyle is used to enforce good programming style.
 
 1. Install Checkstyle plugin v4.x:
-   Download this from http://sourceforge.net/projects/eclipse-cs/files/Eclipse%20Checkstyle%20Plug-in/v4.4.2/com.atlassw.tools.eclipse.checkstyle_4.4.2-bin.zip/download  
-   Copy plugins/com.atlassw.tools.eclipse.checkstyle_4.4.2 from the extraction
-   of the above downloaded zip file into the dropins directory of your eclipse
-   installation.
+
+ * Download this from http://sourceforge.net/projects/eclipse-cs/files/Eclipse%20Checkstyle%20Plug-in/v4.4.2/com.atlassw.tools.eclipse.checkstyle_4.4.2-bin.zip/download  
+ * Copy `plugins/com.atlassw.tools.eclipse.checkstyle_4.4.2` from the extraction of the above downloaded zip file into the dropins directory of your eclipse installation.
 
 2. Enable Custom GWT Checkstyle checks:
 
-Copy "settings/code-style/gwt-customchecks.jar" into:
-  <eclipse>/plugins/com.atlassw.tools.eclipse.checkstyle_x.x.x/extension-libraries
+ * Copy "settings/code-style/gwt-customchecks.jar" into: `<eclipse>/plugins/com.atlassw.tools.eclipse.checkstyle_x.x.x/extension-libraries`
 
 3. Import GWT Checks:
 
-Window->Preferences->Checkstyle->New...
-Set the Type to "External Configuration File"
-Set the Name to "GWT Checks" (important)
-Set the location to "settings/code-style/gwt-checkstyle.xml".
-Suggested: Check "Protect Checkstyle configuration file".
-Click "Ok".
+ * Window->Preferences->Checkstyle->New...
+ * Set the Type to "External Configuration File"
+ * Set the Name to "GWT Checks" (important)
+ * Set the location to "settings/code-style/gwt-checkstyle.xml".
+ * Suggested: Check "Protect Checkstyle configuration file".
+ * Click "Ok".
 
 4. Import GWT Checks for Tests
 
-Repeat step 3, except:
-Set the Name to "GWT Checks for Tests" (important)
-Set the location to "settings/code-style/gwt-checkstyle-tests.xml".
+ * Repeat step 3, except:
+ * Set the Name to "GWT Checks for Tests" (important)
+ * Set the location to "settings/code-style/gwt-checkstyle-tests.xml".
 
 ##Importing the Google Plugin projects
 
