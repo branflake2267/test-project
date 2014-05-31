@@ -193,9 +193,9 @@ Import GWT Checks.
 ###Import test styles
 Import GWT Checks for Tests
 
- * Repeat step 3, except:
- * Set the Name to "GWT Checks for Tests" (important)
- * Set the location to "settings/code-style/gwt-checkstyle-tests.xml".
+1. Repeat step 3, except:
+2. Set the Name to "GWT Checks for Tests" (important)
+3. Set the location to "settings/code-style/gwt-checkstyle-tests.xml".
 
 
 ##Importing the Google Plugin projects
