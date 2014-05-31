@@ -123,7 +123,9 @@ close the project, or install Subversive: http://download.eclipse.org/releases/h
 2. There is no import here, so make your settings match:
 <img src="eclipse/settings/code-style/gwt-sort-order.png" />
 
-* First, members should be sorted by category.
+###Sort members
+First, members should be sorted by category.
+
 1. `Types`
 2. `Static Fields`
 3. `Static Initializers`
@@ -133,7 +135,9 @@ close the project, or install Subversive: http://download.eclipse.org/releases/h
 7. `Constructors`
 8. `Methods`
 
-* Second, members in the same category should be sorted by visibility.
+###Sort visibility
+Second, members in the same category should be sorted by visibility.
+
 1. `Public`
 2. `Protected`
 3. `Default`
